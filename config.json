@@ -1,0 +1,16 @@
+{
+    "FAUXMO": {
+        "ip_address": "auto"
+    },
+    "PLUGINS": {
+        "TestPlugin": {
+            "path": "./TestPlugin.py",
+            "DEVICES": [
+                {
+                    "name": "Test",
+                    "port": 12340
+                }
+            ]
+        }
+    }
+}
