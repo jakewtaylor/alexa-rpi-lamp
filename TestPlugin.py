@@ -50,7 +50,7 @@ class TestPlugin(FauxmoPlugin):
 
         try:
             # turn off the channel
-            gpio.output(self.pin, GPIO.LOW)
+            gpio.output(self.pin, gpio.LOW)
 
             return True
         except:
