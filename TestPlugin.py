@@ -65,7 +65,7 @@ class TestPlugin(FauxmoPlugin):
     Returns a dictionary like:
     relay_channel -> BCM Pin
     """
-    def get_channel_pin_dict():
+    def get_channel_pin_dict(self):
         return {
             8: 2
         }
