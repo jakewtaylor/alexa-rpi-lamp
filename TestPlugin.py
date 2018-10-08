@@ -9,12 +9,12 @@ class TestPlugin(FauxmoPlugin):
     def on(self) -> bool:
         self.state = 'on'
         print('On!')
-        return true
+        return True
 
     def off(self) -> bool:
         self.state = 'off'
         print('Off!')
-        return true
+        return True
 
     def get_state(self) -> str:
         return self.state
