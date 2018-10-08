@@ -3,8 +3,8 @@
         "ip_address": "auto"
     },
     "PLUGINS": {
-        "TestPlugin": {
-            "path": "./TestPlugin.py",
+        "RelayPlugin": {
+            "path": "./RelayPlugin.py",
             "DEVICES": [
                 {
                     "name": "Bedroom Lamp",

@@ -1,7 +1,7 @@
 from fauxmo.plugins import FauxmoPlugin
 import RPi.GPIO as gpio
 
-class TestPlugin(FauxmoPlugin):
+class RelayPlugin(FauxmoPlugin):
     """
     Initiates the plugin.
     """
@@ -33,7 +33,7 @@ class TestPlugin(FauxmoPlugin):
 
         try:
             # turn on the channel
-            gpio.output(self.pin, gpio.HIGH)
+            gpio.output(self.pin, gpio.LOW)
 
             return True
         except:
@@ -50,7 +50,7 @@ class TestPlugin(FauxmoPlugin):
 
         try:
             # turn off the channel
-            gpio.output(self.pin, gpio.LOW)
+            gpio.output(self.pin, gpio.HIGH)
 
             return True
         except:
