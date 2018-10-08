@@ -27,6 +27,7 @@ class TestPlugin(FauxmoPlugin):
     Turns on the relay channel.
     """
     def on(self) -> bool:
+        print('turning on')
         # adjust state
         self.state = 'on'
 
@@ -43,12 +44,13 @@ class TestPlugin(FauxmoPlugin):
     Turns off the relay channel.
     """
     def off(self) -> bool:
+        print('turning off')
         # adjust state
         self.state = 'off'
 
         try:
             # turn off the channel
-            gpio.output(self.pin. GPIO.LOW)
+            gpio.output(self.pin, GPIO.LOW)
 
             return True
         except:
