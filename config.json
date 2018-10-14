@@ -9,7 +9,7 @@
                 {
                     "name": "Lamp",
                     "port": 12340,
-                    "channel": 8
+                    "channel": 4
                 }
             ]
         }

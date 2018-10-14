@@ -69,5 +69,5 @@ class RelayPlugin(FauxmoPlugin):
     """
     def get_channel_pin_dict(self):
         return {
-            8: 2
+            4: 2
         }
